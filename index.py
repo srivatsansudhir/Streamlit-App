@@ -5,7 +5,7 @@ from pandasai import SmartDataframe
 
 
 zip_file_path = CSV_5262024-602.zip
-csv_file_name = CSV_5262024-602.zip
+csv_file_name = CSV_5262024-602.csv
 
 
 with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
@@ -27,7 +27,7 @@ os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4
 
 
 agent = Agent(SmartDataframe(df),config={"llm": llm})
-question=input("What would you like to know?")
+question=input("What would you like to know? ")
 response = agent.chat(question)
 print(response)
 
