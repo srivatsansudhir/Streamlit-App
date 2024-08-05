@@ -4,7 +4,7 @@ import os
 from pandasai import SmartDataframe
 
 
-zip_file_path = r'C:/Users/heman/Downloads/CSV_5262024-602.zip'
+zip_file_path = CSV_5262024-602.zip
 csv_file_name = 'CSV_5262024-602.csv'
 
 
