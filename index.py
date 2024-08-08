@@ -25,7 +25,7 @@ from pandasai.agent import Agent
 from pandasai import Agent
 from pandasai.llm import OpenAI
 from pandasai.llm import BambooLLM
-#llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe")
+llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe")
 
 os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe"
 
@@ -33,7 +33,7 @@ sdf = SmartDataframe(df)
 #agent = Agent(sdf,config={"llm": llm})
 st.write("created frame")
 #question=input("What would you like to know? ")
-response = sdf.chat('Which university has the most total enrollment?')
+response = sdf.chat("How many institutions are in the dataset?")
 st.write(response)
 
 
