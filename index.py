@@ -1,7 +1,6 @@
 import pandas as pd
 import zipfile
 import os
-import pandasai as pandasai
 from pandasai import SmartDataframe
 
 
