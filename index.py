@@ -17,6 +17,9 @@ extracted_csv_path = csv_file_name
 
 
 df = pd.read_csv(extracted_csv_path)
+st.write("csv read")
+st.write(df.to_string()) 
+
 
 from pandasai.agent import Agent
 from pandasai import Agent
