@@ -17,7 +17,7 @@ extracted_csv_path = csv_file_name
 
 
 df = pd.read_csv(extracted_csv_path)
-st.write("csv read")
+
 #st.write(df.to_string()) 
 
 
@@ -33,7 +33,7 @@ sdf = SmartDataframe(df, config={"llm": llm})
 
 
 #agent = Agent(sdf,config={"llm": llm})
-st.write("created frame")
+
 question = st.text_input('Enter question ')
 response = sdf.chat(question)
 st.write(response)
