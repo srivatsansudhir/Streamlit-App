@@ -1,6 +1,7 @@
 import pandas as pd
 import zipfile
 import os
+import streamlit as st
 #from pandasai import SmartDataframe
 
 
@@ -30,7 +31,7 @@ os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4
 #question=input("What would you like to know? ")
 #response = agent.chat(question)
 #print(response)
-print("fds;lfs")
+st.write("d;sfj")
 
 
 
