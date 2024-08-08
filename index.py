@@ -35,7 +35,7 @@ sdf = SmartDataframe(df, config={"llm": llm})
 #agent = Agent(sdf,config={"llm": llm})
 st.write("created frame")
 #question=input("What would you like to know? ")
-response = sdf.chat("How many institutions are in the dataset?")
+response = sdf.chat("Which 10 universities have the most total applicants?")
 st.write(response)
 
 
