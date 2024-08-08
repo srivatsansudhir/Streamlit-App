@@ -34,7 +34,7 @@ sdf = SmartDataframe(df)
 st.write("created frame")
 #question=input("What would you like to know? ")
 response = sdf.chat('Which university has the most total enrollment?')
-#st.write(response)
+st.write(response)
 
 
 
