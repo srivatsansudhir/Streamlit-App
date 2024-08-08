@@ -1,7 +1,7 @@
 import pandas as pd
 import zipfile
 import os
-from pandasai import SmartDataframe
+#from pandasai import SmartDataframe
 
 
 zip_file_path = 'CSV_5262024-602.zip'
@@ -26,10 +26,10 @@ llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxw
 os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe"
 
 
-agent = Agent(SmartDataframe(df),config={"llm": llm})
-question=input("What would you like to know? ")
-response = agent.chat(question)
-print(response)
+#agent = Agent(SmartDataframe(df),config={"llm": llm})
+#question=input("What would you like to know? ")
+#response = agent.chat(question)
+#print(response)
 
 
 
