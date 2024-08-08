@@ -28,8 +28,8 @@ os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4
 
 
 agent = Agent(SmartDataframe(df),config={"llm": llm})
-question=input("What would you like to know? ")
-response = agent.chat(question)
+#question=input("What would you like to know? ")
+response = agent.chat('Which 10 universities have the most total applicants?')
 st.write(response)
 st.write("d;sfj")
 
