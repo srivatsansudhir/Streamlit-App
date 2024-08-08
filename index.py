@@ -19,7 +19,7 @@ extracted_csv_path = csv_file_name
 df = pd.read_csv(extracted_csv_path)
 st.write("csv read")
 #st.write(df.to_string()) 
-
+os.environ.pop("PANDASAI_API_KEY", None)
 
 from pandasai.agent import Agent
 from pandasai import Agent
@@ -28,7 +28,7 @@ from pandasai.llm import BambooLLM
 llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe")
 
 os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe"
-
+os.environ.pop("PANDASAI_API_KEY", None)
 sdf = SmartDataframe(df, config={"llm": llm})
 
 
