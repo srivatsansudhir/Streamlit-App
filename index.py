@@ -30,7 +30,7 @@ llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxw
 os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe"
 
 
-agent = Agent(SmartDataframe(df),config={"llm": llm})
+agent = Agent(SmartDataframe(df),config={"llm": llm}, "enable_cache": False)
 st.write("created frame")
 #question=input("What would you like to know? ")
 response = agent.chat('Which 10 universities have the most total applicants?')
