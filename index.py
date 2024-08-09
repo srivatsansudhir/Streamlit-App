@@ -20,6 +20,7 @@ df = pd.read_csv(extracted_csv_path)
 
 #st.write(df.to_string()) 
 
+st.markdown('''<span style="font-size: 24px;">Larger Text</span>''', unsafe_allow_html=True)
 
 from pandasai.agent import Agent
 from pandasai import Agent
