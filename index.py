@@ -21,7 +21,8 @@ df = pd.read_csv(extracted_csv_path)
 #st.write(df.to_string()) 
 
 st.markdown('''<span style="font-size: 36px;">University Chat Bot</span>''', unsafe_allow_html=True)
-st.markdown('''<span style="font-size: 15px;">This is a chat bot that answers questions based on data of 150 American universities. Try asking "What are the 5 universities with the lowest acceptance rates?".</span>''', unsafe_allow_html=True)
+st.markdown('''<span style="font-size: 15px;">This is a chat bot that answers questions based on data of 150 American universities. Try asking "What are the 5 universities with the lowest acceptance rates?"</span>''', unsafe_allow_html=True)
+st.markdown('''<span style="font-size: 15px;">Source: nces.ed.gov </span>''', unsafe_allow_html=True)
 from pandasai.agent import Agent
 from pandasai import Agent
 from pandasai.llm import OpenAI
