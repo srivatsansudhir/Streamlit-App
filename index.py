@@ -17,6 +17,7 @@ extracted_csv_path = csv_file_name
 
 
 df = pd.read_csv(extracted_csv_path)
+df.head()
 
 #st.write(df.to_string()) 
 
