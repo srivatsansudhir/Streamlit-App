@@ -4,8 +4,8 @@ import os
 import streamlit as st
 from pandasai import SmartDataframe
 
-from pandasai import PandasAI
-from pandasi.llm.openai import OpenAI
+#from pandasai import PandasAI
+#from pandasi.llm.openai import OpenAI
 
 
 zip_file_path = 'CSV_5262024-602.zip'
@@ -32,15 +32,15 @@ from pandasai import Agent
 
 
 
-#from pandasai.llm import OpenAI
+from pandasai.llm import OpenAI
 from pandasai.llm import BambooLLM
 
 
-llm = OpenAI(api_token='sk-QHqf5RW7K55XqwZefSo9sSIE53MRnAOFj__GvE9g_VT3BlbkFJbDWVqV_KPONoV-EuhLlBlZmlKMYffqbNSSYHvkmegA')
+#llm = OpenAI(api_token='sk-QHqf5RW7K55XqwZefSo9sSIE53MRnAOFj__GvE9g_VT3BlbkFJbDWVqV_KPONoV-EuhLlBlZmlKMYffqbNSSYHvkmegA')
 pandas_ai = PandasAI(llm, verbose=True, conversational=False)
-#llm = BambooLLM(api_key="$2a$10$S5dT3t1ZAX0MJ93xxGgNYeRjKl/NhXXG0Eu4Kw.NHSTOyI7wZTaG6")
+llm = BambooLLM(api_key="$2a$10$Dot0CPMnrRHpQsODdO4FkeIwS59gRzLmepKGLiQAn19soUXbO0f0K")
 
-os.environ["PANDASAI_API_KEY"] = "sk-QHqf5RW7K55XqwZefSo9sSIE53MRnAOFj__GvE9g_VT3BlbkFJbDWVqV_KPONoV-EuhLlBlZmlKMYffqbNSSYHvkmegA"
+os.environ["PANDASAI_API_KEY"] = "$2a$10$Dot0CPMnrRHpQsODdO4FkeIwS59gRzLmepKGLiQAn19soUXbO0f0K"
 os.environ.pop("PANDASAI_API_KEY", None)
 sdf = SmartDataframe(df, config={"llm": llm})
 
@@ -48,8 +48,8 @@ sdf = SmartDataframe(df, config={"llm": llm})
 
 
 question = st.text_input('Enter question ')
-#response = sdf.chat(question)
-response = pandas_ai(sdf, question)
+response = sdf.chat(question)
+#response = pandas_ai(sdf, question)
 st.write(response)
 
 
