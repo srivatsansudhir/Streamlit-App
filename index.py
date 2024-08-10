@@ -27,9 +27,9 @@ from pandasai.agent import Agent
 from pandasai import Agent
 from pandasai.llm import OpenAI
 from pandasai.llm import BambooLLM
-llm = BambooLLM(api_key="$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe")
+llm = BambooLLM(api_key="$2a$10$S5dT3t1ZAX0MJ93xxGgNYeRjKl/NhXXG0Eu4Kw.NHSTOyI7wZTaG6")
 
-os.environ["PANDASAI_API_KEY"] = "$2a$10$x3EcWszIfXWOuK74XI.tEON6eWJIsRtAzj4e6Y4Q0TS1tyxwrFMXe"
+os.environ["PANDASAI_API_KEY"] = "$2a$10$S5dT3t1ZAX0MJ93xxGgNYeRjKl/NhXXG0Eu4Kw.NHSTOyI7wZTaG6"
 os.environ.pop("PANDASAI_API_KEY", None)
 sdf = SmartDataframe(df, config={"llm": llm})
 
