@@ -1,4 +1,4 @@
 pyyaml
 pandas
-pandasai
+pandasai==1.4.1
 streamlit
