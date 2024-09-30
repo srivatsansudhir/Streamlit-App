@@ -6,7 +6,7 @@ from pandasai import SmartDataframe
 
 
 
-zip_file_path = 'latestcsveditzip'
+zip_file_path = 'latestcsvedit'
 csv_file_name = 'latestcsvedit.csv'
 
 
