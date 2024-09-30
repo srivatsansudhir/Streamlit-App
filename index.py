@@ -23,7 +23,7 @@ df = pd.read_csv(extracted_csv_path)
 
 
 st.markdown('''<span style="font-size: 36px;">University Chat Bot</span>''', unsafe_allow_html=True)
-st.markdown('''<span style="font-size: 15px;">This is a chat bot that answers questions based on data of 150 top American universities from QS World University Rankings. Try asking "What are the 5 universities with the lowest acceptance rates?", "What are the top 10 universities with the highest median SAT math scores?", "What are the top 15 universities with the lowest tuition?", "What are the top 20 universities with the highest percentage of Asian undergraduates?", "What are the top 30 universities with the highest number of applicants?"</span>''', unsafe_allow_html=True)
+st.markdown('''<span style="font-size: 15px;">This is a chat bot that answers questions based on data of 150 top American universities from QS World University Rankings. Try asking "What are the 5 universities with the lowest acceptance rates?", "What are the top 10 universities with the highest median SAT math scores?", "What are the top 15 universities with the lowest tuition?", "What are the top 20 universities with the highest percentage of Asian undergraduates?", or "What are the top 30 universities with the highest number of applicants?"</span>''', unsafe_allow_html=True)
 st.markdown('''<span style="font-size: 15px;">Source: nces.ed.gov </span>''', unsafe_allow_html=True)
 from pandasai.agent import Agent
 from pandasai import Agent
