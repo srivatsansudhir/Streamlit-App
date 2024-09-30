@@ -6,8 +6,11 @@ from pandasai import SmartDataframe
 
 
 
-zip_file_path = 'latestcsvedit.zip'
-csv_file_name = 'latestcsvedit.csv'
+zip_file_path = 'CSV_5262024-602.zip'
+csv_file_name = 'CSV_5262024-602.csv'
+
+with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+    zip_ref.extract(csv_file_name)
 
 
 
