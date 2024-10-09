@@ -50,7 +50,8 @@ sdf = SmartDataframe(df, config={"llm": llm})
 question = st.text_input('Enter question ')
 response = sdf.chat(question)
 #response = pandas_ai(sdf, question)
-st.write(response)
+if response != "":
+    st.write(response)
 
 
 
