@@ -47,11 +47,11 @@ sdf = SmartDataframe(df, config={"llm": llm})
 
 
 
-question = st.text_input('Enter question ')
-response = sdf.chat(question)
-#response = pandas_ai(sdf, question)
+#question = st.text_input('Enter question ')
+#response = sdf.chat(question)
 
-st.write(response)
+
+#st.write(response)
 
 
 
