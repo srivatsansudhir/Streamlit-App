@@ -38,9 +38,9 @@ from pandasai.llm import BambooLLM
 
 
 
-llm = BambooLLM(api_key="$2a$10$Dot0CPMnrRHpQsODdO4FkeIwS59gRzLmepKGLiQAn19soUXbO0f0K")
+llm = BambooLLM(api_key="$2a$10$/16y2hi.GPPLsIk5JoRSROYkIICG6iUwC7dfCxvrYa1GTaWMLZM3u")
 
-os.environ["PANDASAI_API_KEY"] = "$2a$10$Dot0CPMnrRHpQsODdO4FkeIwS59gRzLmepKGLiQAn19soUXbO0f0K"
+os.environ["PANDASAI_API_KEY"] = "$2a$10$/16y2hi.GPPLsIk5JoRSROYkIICG6iUwC7dfCxvrYa1GTaWMLZM3u"
 os.environ.pop("PANDASAI_API_KEY", None)
 sdf = SmartDataframe(df, config={"llm": llm})
 
